@@ -1,0 +1,27 @@
+<div class="bg-img">
+    <form action="/action_page.php" class="container">
+      <h1>Login</h1>
+  
+      <form #form="ngForm" (ngSubmit)="login(form)" method="post">
+          <ion-item>
+            <ion-label position="floating">Nomor Ponsel Atau Email </ion-label>
+            <ion-input ngModel type="email" name="email"></ion-input>
+          </ion-item>
+          <ion-item>
+            <ion-label position="floating">Kata Sandi</ion-label>
+            <ion-input ngModel type="password" name="password"></ion-input>
+          </ion-item>
+          <br>
+          <ion-tab-button tab="tab4" expand="full">
+          <ion-button expand="full" color="danger">
+          Login
+          </ion-button>
+          </ion-tab-button>
+      <ion-tab-button tab="tab6" expand="full">
+          <ion-button expand="full" color="dark">
+          Register
+      </ion-button>
+      </ion-tab-button>
+      </form>
+    </form>
+  </div>
